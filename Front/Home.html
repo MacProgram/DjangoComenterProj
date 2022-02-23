@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html style="height: auto; min-height: 100%;"  lang="es">
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html">
+    <title>Melo Home</title>
+</head>
+<body class="main-page" style="height: auto; min-height: 100%;">
+<div>
+    <h2 style="color: red" align="center" >Menu Home </h2></div>
+<p><strong>Esta es la pagina de presentacion hecha para {{Nombre}} {{Apellido}}</strong></p>
+<p><ul>
+    {% if Menu %}
+        {% for x in Menu%}
+            <li>{{x}}</li>
+        {% endfor %}
+    {% else %}
+        <h1>No hay elementos para mostrar</h1>
+    {% endif %}
+</ul></p>
+<div><h3 align="center">Estamos al dia de {{Fexa.time}} del mes</h3></div>
+<table bgcolor="red" cellpadding="10">
+    <thead>
+        <th>titulo 1</th>
+        <th>titulo 2</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mandioca</td>
+            <td>manzana</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="campo">
+    <input type="text" placeholder="Nuestra relacion va mal?" name="Ingrese" required="" autocomplete="off"></div>
+<button  style="color: red" type="button" class="icono" onclick="">Agregar Comentario</button>
+<form></form>
+</body>
+</html>
