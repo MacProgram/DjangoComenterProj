@@ -1,0 +1,78 @@
+/* Estilos de la primera parte del codigo */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* Relaciones de aspecto y configuraciones generales que afectan a todo el archivo */
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+#Titulo {
+  position: sticky;
+  font: lighter 40px Lobster;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(239, 131, 84, 1);
+  color: rgba(95,21,2,1);
+}
+
+.menu {
+  list-style: none;
+  font-family: monospace;
+  position: relative;
+  padding: 0;
+  background: #092327;
+  width: 100%;
+  max-width: 1500px;
+  margin:auto;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  display:block;
+}
+
+.menu li {
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a:hover{
+  background: #ef8354;
+}
+
+/* Finaliza personalizacion de la barra MENU
+      Continua
+  Peronalizaciones del cuerpo de la pagina */
+
+ .campo{
+   text-align: center;
+ }
+
+table[bgcolor] {
+  font-stretch: expanded;
+  margin: auto;
+}
+
+svg {
+  border: 1px solid blue
+}
+
+/* Estilos para el pie de pagina */
+
+.Divis {
+  font: bold 17px monospace;
+  text-align: center;
+  margin: auto;
+  max-width: 1500px;
+  padding-bottom: 0px;
+  
+  padding: 2px;
+  display:block;
+}
+
+
+/* A partir de aca vamor a ver que tal el menu respoonsive */

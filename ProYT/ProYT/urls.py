@@ -22,7 +22,7 @@ urlpatterns = [
     path('Home/', Principal), #Url con el menu para elegir que hacer
     path('CajCome/', Comenter),
     path('Fexa/', FexaDoy), # Contenido cambiante en cada actualizacion
-    path("An/<int:agno>", Calculef) #Vamos a pasar por la URL un parametro
+    path("An/<int:agno>", Calculef), #Vamos a pasar por la URL un parametro
 ]
 
 

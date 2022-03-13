@@ -1,0 +1,72 @@
+<!-- {% load static %} -->
+
+<!DOCTYPE html>
+
+<html style="height: auto; min-height: 100%;" lang="es" >
+<head>
+    <meta charset="UTF-8"/>
+
+    <title>FORWITH</title>
+    <meta name="Organizador" content="Pagina para organizar objetivos"/>
+    <meta name="Autor" content="Macuglia Luciano" />
+    <meta name="tags" content="Organizar, Organizador, no procastinar"/>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <!-- link rel="stylesheet" href='{% static "/css/style.css" %}' type="text/css" / -->
+
+</head>
+<body class="main-page" style="height: auto; min-height: 100%;">
+  <h1 id="Titulo">Organizador de objetivos</h1>
+
+<!-- Esta parte es el menu, hace uso de la hoja css y esta la parte del responsive -->
+
+  <nav>
+  <ul class="menu">
+    <li><a href="#">Añadir</a></li>
+    <li><a href="#">Cajon</a></li>
+    <li><a href="#" id="Opc">Opciones</a></li>
+  </ul>
+  </nav>
+
+<!-- Acá irian los distinto objetos (cuadros con los objetivos cargados) con las siguientes informacion
+Fecha de creacion; Fecha de vencimiento; Proposito; dias restantes; Si envia o no un mail; Si está vencido (estado); Boton "eliminar"; boton editar;
+ -->
+
+<div class="campo">
+  <form class="TextoAmplio" method="get">
+        <textarea id="TextBox" autofocus > </textarea>
+     </br>
+        <input type="submit" name="envia" value="Enviar Comentario">
+  </form>
+
+</div>
+
+
+
+
+
+<!-- Ejemplo de una tabla
+
+<table bgcolor="red" cellpadding="10">
+    <thead>
+        <th>titulo 1</th>
+        <th>titulo 2</th>
+    </thead>
+    <tbody>
+        <tr><nav>
+            <td>Mandioca</td>
+            <td>manzana</td>
+        </nav></tr>
+    </tbody>
+</table>
+
+-->
+
+<!-- Pie de pagina -->
+
+<div class="Divis"><h3>Estamos al dia de {{Fexa.time}} del mes</h3></div>
+<div class="Divis">
+  <p><strong>Derechos Reservados {{Nombre}} {{Apellido}} Programacion</strong></p>
+</div>
+
+</body>
+</html>

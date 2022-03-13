@@ -17,7 +17,7 @@ def  Principal(request):
 	p1 = Person("Melody", "Trilla")
 	Est = datetime.datetime.now()
 
-	DoxOut = open(r"D:/Users/lukym/Desktop/Projects/Dproject/Front/Home.html")
+	DoxOut = open(r"D:/Users/lukym/Desktop/Projects/Dproject/static/home.html")
 	plt = Template(DoxOut.read())
 	DoxOut.close()
 
