@@ -15,14 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from ProYT.views import Principal, Comenter, FexaDoy, Calculef
+#from ProYT.views import Principal, Comenter, FexaDoy, Calculef
+from ProYT.views import Principal
 
 urlpatterns = [
-    path('admin/', admin.site.urls), #Url propiciada por Django
-    path('Home/', Principal), #Url con el menu para elegir que hacer
-    path('CajCome/', Comenter),
-    path('Fexa/', FexaDoy), # Contenido cambiante en cada actualizacion
-    path("An/<int:agno>", Calculef), #Vamos a pasar por la URL un parametro
+    path('admin/', admin.site.urls),  # Url propiciada por Django
+    path('Home/', Principal),  # Url con el menu para elegir que hacer
+    #path('CajCome/', Comenter),
+    #path('Fexa/', FexaDoy), # Contenido cambiante en cada actualizacion
+    #path("An/<int:agno>", Calculef), #Vamos a pasar por la URL un parametro
 ]
 
 
